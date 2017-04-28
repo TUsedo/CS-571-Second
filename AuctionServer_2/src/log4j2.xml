@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration strict = "true" status = "debug" name="XMLConfigTest">
+<Properties>
+	<Property name = "filename">D:/Github/Java/OS/AuctionServer_2/Log/test.log</Property>
+</Properties>
+<Appenders>
+	<Appender type = "File" name = "FILE" filename="${filename}">
+		<Layout type = "PatternLayout">
+			<Pattern>%d{DATE} {%m}%n%n</Pattern>
+		</Layout>
+	</Appender>
+</Appenders>
+<Loggers>
+	<Logger name="AuctionServer" level = "debug" additivity = "true">
+		<AppenderRef ref="FILE" />
+	</Logger>
+	<Root level = "debug">
+		<AppenderRef ref = "FILE" />
+	</Root>
+</Loggers>
+
+</Configuration>
