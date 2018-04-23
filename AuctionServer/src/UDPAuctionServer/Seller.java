@@ -4,11 +4,7 @@ import java.io.*;
 import java.net.*;
 
 public class Seller {
-
-
-
 	public static void main(String[] args) throws Exception {
-
 		int seller_port = 5001;
 		String readin;
 		byte receivebuffer[] = new byte[1500];
@@ -17,7 +13,7 @@ public class Seller {
 		DatagramPacket sellerreader;
 		String bufferreader;
 		
-		System.out.println("This is Seller Prgram");
+		System.out.println("This is Seller Program");
 		InetAddress serveraddress = InetAddress.getByName("localhost");
 		try
 		{
@@ -77,5 +73,4 @@ public class Seller {
 			e.printStackTrace();
 		}
 	}
-
 }

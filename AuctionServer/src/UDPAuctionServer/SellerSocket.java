@@ -1,11 +1,8 @@
-package UDPAuctionServer;
-
+  package UDPAuctionServer;
 import java.net.*;
-
 public class SellerSocket extends Thread
 {
 	SellerSocket(){}
-
 	public void run()
 	{
 		try{
@@ -25,6 +22,5 @@ public class SellerSocket extends Thread
 		{
 			e.printStackTrace();
 		}
-
 	}
 }
